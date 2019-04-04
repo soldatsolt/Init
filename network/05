@@ -1,0 +1,1 @@
+ping -c 1 google.com | head -1 | awk '{print $3}'| rev | cut -c 2- | rev
