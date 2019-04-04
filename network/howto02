@@ -1,3 +1,0 @@
-Type ipconfig (or ifconfig on Linux) at command prompt. This will give you the IP address of your own machine. For example, your machine's IP address is 192.168.1.6. So your broadcast IP address is 192.168.1.255.
-Ping your broadcast IP address ping 192.168.1.255 (may require -b on Linux)
-Now type arp -a. You will get the list of all IP addresses on your segment.
