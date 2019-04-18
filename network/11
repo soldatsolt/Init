@@ -1,0 +1,12 @@
+traceroute: Warning: slash16.org has multiple addresses; using 13.32.43.26
+traceroute to slash16.org (13.32.43.26), 64 hops max, 52 byte packets
+ 1  192.168.30.1 (192.168.30.1)  1.423 ms  0.895 ms  0.870 ms
+ 2  192.168.2.9 (192.168.2.9)  0.251 ms  0.234 ms  0.218 ms
+ 3  217-67-187-49.in-addr.mastertelecom.ru (217.67.187.49)  16.924 ms  6.722 ms  17.808 ms
+ 4  mail.neoresurs.ru (217.67.176.130)  0.399 ms  0.449 ms  0.425 ms
+ 5  217-67-176-205.in-addr.mastertelecom.ru (217.67.176.205)  1.709 ms  1.623 ms  1.562 ms
+ 6  ae11-227.rt.mr.msk.ru.retn.net (87.245.253.69)  1.030 ms  1.077 ms  1.011 ms
+ 7  ae5-8.rt.rad.hki.fi.retn.net (87.245.233.174)  16.899 ms
+    ae2-5.rt.rad.hki.fi.retn.net (87.245.233.94)  16.026 ms
+    ae5-8.rt.rad.hki.fi.retn.net (87.245.233.174)  16.789 ms
+ 8  52.46.167.62 (52.46.167.62)  18.120 ms  17.986 ms  17.765 ms

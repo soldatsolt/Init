@@ -1,0 +1,1 @@
+ping 42.fr -c1 | grep "64 bytes" | awk '{print $4}' | rev | cut -c 2- | rev
