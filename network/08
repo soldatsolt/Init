@@ -1,0 +1,1 @@
+whois $(ping slash16.org -c1 | grep "64 bytes" | awk '{print $4}' | rev | cut -c 2- | rev)
