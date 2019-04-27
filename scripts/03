@@ -4,17 +4,17 @@ NF=$(echo $dellist | awk '{print NF}')
 for (( i=1; i <= $NF; i++ ))
 do
 echo $dellist | awk -v temp=$i '{print $temp}'
-echo "Do you want to remove this file? (y/n)"
+ls -lh $(echo $dellist | awk -v temp=$i '{print $temp}') | awk '{print "Do you want to remove this file? (y/n). Size is " $5}'
 read answer
 if [ $answer == "y" ];
 then
-rm $(echo $dellist | awk -v temp=$i '{print $temp}')
-echo "YOU PRESSED y"
+rm -rf $(echo $dellist | awk -v temp=$i '{print $temp}')
+echo "you pressed y"
 elif [ $answer == "n" ];
 then
-echo "YOU PRESSED n"
+echo "you pressed n"
 else
-echo "PRESS (y/n)"
+echo "press (y/n)"
 i=$i-1;
 continue
 fi
