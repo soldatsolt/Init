@@ -8,6 +8,7 @@ echo "Do you want to remove this file? (y/n)"
 read answer
 if [ $answer == "y" ];
 then
+rm $(echo $dellist | awk -v temp=$i '{print $temp}')
 echo "YOU PRESSED y"
 elif [ $answer == "n" ];
 then
