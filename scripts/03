@@ -1,7 +1,16 @@
 #! /bin/bash
-dellist=$(find /Users/kmills/ -type f -size +100M 2>&1 | grep -v find)
+dellist=$(find /Users/kmills -type f -size +100M 2>&1 | grep -v find)
 NF=$(echo $dellist | awk '{print NF}')
 for (( i=1; i <= $NF; i++ ))
 do
-echo "number is $i"
+echo $dellist | awk -v temp=$i '{print $temp}'
+echo "Do you want to remove this file? (y/n)"
+read answer
+if [$answer = y]
+then
+echo "YOU PRESSED y"
+elif [$answer = n]
+then
+echo "YOU PRESSED n"
+fi
 done
