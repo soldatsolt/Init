@@ -1,0 +1,21 @@
+#!/bin/bash
+set +x
+
+
+clear
+echo
+echo "Welcome, $(whoami)"
+echo
+
+echo "Shall we change this to something more appropriate?"
+echo "if no,simply enter 'n' then press [Enter]:"
+read input_user_name
+
+if [ $input_user_name == "n" ];
+then user_name=`whoami`   ## i have used `` to get the value of whoami
+else
+
+user_name=$input_user_name
+fi
+
+echo "Your $user_name !"
