@@ -1,1 +1,7 @@
 #! /bin/bash
+dellist=$(find /Users/kmills/ -type f -size +100M 2>&1 | grep -v find)
+NF=$(echo $dellist | awk '{print NF}')
+for (( i=1; i <= $NF; i++ ))
+do
+echo "number is $i"
+done
