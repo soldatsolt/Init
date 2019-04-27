@@ -1,5 +1,5 @@
 #! /bin/bash
-dellist=$(find /Users/kmills -type f -size +100M 2>&1 | grep -v find)
+dellist=$(find /Users/kmills -type f -size +100M 2>/dev/null | grep -v find)
 NF=$(echo $dellist | awk '{print NF}')
 for (( i=1; i <= $NF; i++ ))
 do
